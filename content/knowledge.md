@@ -1,0 +1,81 @@
+# HTML
+
+- attributes: thuộc tính
+- _div_: là thẻ `block`, thường dùng để bao 1 khối chưa nhiều phần tử, đây là thẻ thông dụng nhất và được dùng nhiều nhất
+- _p_: là thẻ `block`, thường dùng để hiển thị văn bản, có nhiều chữ và thường là các chữ nhỏ
+- _a_: là thẻ `inline`, thường dùng để cho mục đích là liên kết, có `href` là thuộc tính để điền vào đường dẫn, muốn nhấn vào mở tab mới thì thêm thuộc tính `target="\_blank"`, nếu sử dụng target là \_blank thì nên thêm thuộc tính `rel="noopener norefferer"`
+- _header_: thường dùng cho các khối ở trên
+- _footer_: thường dùng cho khối dưới cùng của trang
+- _main_: là phần chính của trang
+- _article_: thẻ block, thường dùng cho các giao diện dạng bài viết
+- _aside_: thẻ block, thường dùng cho các giao diện sidebar
+- _span_: là thẻ inline, thường dùng cho các đoạn chữ ngắn
+- _strong_, _b_: là thẻ inline, chức năng tương tự thẻ span, nhưng nó khác ở chỗ là làm cho chữ in đậm
+- _em_, _i_: là thẻ inline, chức năng tương tự span, nhưng làm cho chữ in nghiêng
+- h1->h6: thẻ block, nó dùng cho các tiêu đề từ lớn đến nhỏ
+- _h1_: trong 1 trang chỉ có tối đa 1 thẻ h1 mà thôi vì nó liên quan tới SEO
+- _h2_: thường đại diện cho 1 khối lớn
+- _h3_: đại diện cho khối nhỏ hơn
+- _h4_: tiêu đề nhỏ
+- _img_: là thẻ inline, dùng để hiển thị hình ảnh, `src` là để truyền vào đường dẫn hình ảnh, đường dẫn hình có thể lấy từ thư mục đang làm hoặc là hình ảnh online, `alt`(alternate text) mô tả tên tấm ảnh(liên quan tới SEO), là thẻ tự đóng
+- _br_: xuống hàng mới, là thẻ tự đóng
+- _hr_: sẽ tạo ra đường kẻ ngang, là thẻ tự đóng
+- _ul_: thường dùng để hiển thị danh sách không có thứ tự(ko có đánh số)
+- _ol_: thường hiển thị danh sách có đánh số
+- thẻ đóng mở có thể chứa các thẻ khác,
+- thẻ div có thể chứa thẻ div, thẻ div chứa hầu hết các thẻ khác đều được
+- thẻ a không nên chứa thẻ a
+- thẻ tự đóng là thẻ không có children(con): img, br, hr
+- _class_ là thuộc tính dùng cho các thẻ, mục đích của nó là để styling trong CSS, hoặc truy vấn trong Javascript, class có thể trùng nhau, class có nhiều cách đặt tên, thông thường hay gặp là BEM(Block\_\_Element--Modifier)
+- _id_ là thuộc tính dùng cho các thẻ, id là duy nhất cho nên ko được trùng nhau, cũng dùng cho truy vấn trong Javascript
+- vấn đề đặt tên không được tốt là do thiếu vốn từ tiếng Anh
+- Naming convention: tên ngắn gọn, dễ hiểu, không dấu, không có khoảng trắng. 1 ví dụ tốt: header, header-item, button, button--primary
+- 2 dấu -- gọi là modifier nghĩa là tùy biến của một thành phần
+- Block\_\_Element--modifier
+- Block: header
+- Element: search, user, noti, message, button
+- Modifier: header big, header small, search long, search gray, user rounded, user round, noti small, message active, message unactive, button big, button primary, button secondary
+- BEM: header--big, header--small, search--gray, buttoon--primary, button--secondary, header\_\_button--primary
+- evondev way: buton--primary, button, header-button
+- Từ tiếng Anh hay gặp: danh sách(list)
+- phần tử(item)
+- tiêu đề(title
+- heading)
+- nội dung(content)
+- chữ(text)
+- hình ảnh(image
+- img
+- avatar)
+- liên kết(link
+- url)
+- đường dẫn(url
+- src)
+- thông tin(info)
+- thời gian(time)
+- khối(box
+- boxed)
+- viền(border
+- line)
+- trạng thái(status)
+- kích hoạt(active/unactive)
+- xóa(delete
+- remove)
+- cập nhật(update) thêm(new
+- create)
+- sửa(edit
+- change)
+- biểu tượng(icon)
+- đánh giá(review
+- rating)
+- thích(like
+- love)
+- đánh dấu(saved
+- bookmark)
+- tab
+- slider
+- progress
+- slider bullet
+- tìm kiếm(search)
+- dropdown(danh sách sổ xuống)
+- lớp phủ(overlay)
+- ...
