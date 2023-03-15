@@ -7,7 +7,6 @@
 - Cài đặt NodeJS, GitSCM
 - Sử dụng vscode từ yếu đến thành thạo: Theme, Extensions, Search, Copy, Format, Font, Tab, Terminal, Sidebar, Status, Command, Shortcuts, Settings...
 - Sử dụng Figma cơ bản
-- Hiểu về đường dẫn cơ bản(./ vs ../)
 - Lưu ý khi đặt tên folder, file
 - Tìm hiểu các thẻ trong HTML: header, footer, aside, nav, main, section, article, div, p, a, span, strong, b, em, time, h1->h6, img, video, audio, figure, figcaption, b, i, br, hr, table, form, meta, title, script, link, sup, sub, mark, del, blockquote, ul, ol, li
 - Tìm hiểu các thuộc tính(attributes) trong HTML
@@ -16,10 +15,15 @@
 - Tư duy gom nhóm(Group mindset) 🤯
 - Hiểu về quan hệ cha con(Parent & child) 🤯
 - Cùng thực hành cơ bản + giải thích + thảo luận
-- Bài tập về nhà
+- Bài tập về nhà: gom nhóm và đặt tên giao diện trang chủ sử dụng kiến thức đã học như các thẻ và đặt tên class
+- thu-trang-buoi1.zip
+- Thời hạn: càng sớm càng tốt
 
 # Buổi 2
 
+- Xem chi tiết các thẻ ở đâu ?
+- Thẻ block và thẻ inline khác nhau như nào ?
+- Hiểu về đường dẫn cơ bản(./ vs ../)
 - selectors: tag, class, id, attribute, nth-child, nth-of-type, not, is, where
 - text: color, line-height, word-break, white-space, letter spacing, word spacing, text-indent, text-overflow, text-rending, text truncation, serif, sans-serif, baseline
 - font: font-size, font-family, font-weight, font-style
