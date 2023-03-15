@@ -19,27 +19,49 @@
 - thu-trang-buoi1.zip
 - Thời hạn: càng sớm càng tốt
 
-# Buổi 2
+# Buổi 2: CSS cơ bản
 
+- Gõ nhanh HTML với Emmet nên biết
 - Xem chi tiết các thẻ ở đâu ?
 - Thẻ block và thẻ inline khác nhau như nào ?
 - Hiểu về đường dẫn cơ bản(./ vs ../)
-- selectors: tag, class, id, attribute, nth-child, nth-of-type, not, is, where
-- text: color, line-height, word-break, white-space, letter spacing, word spacing, text-indent, text-overflow, text-rending, text truncation, serif, sans-serif, baseline
-- font: font-size, font-family, font-weight, font-style
-- image, video: object-fit, object-position, aspect-ratio
-- background: image, linear-gradient, color
+- reset css cho các trình duyệt
+- selectors: tag, class, id, all(\*)
+- text: color, line-height, word-break, white-space, letter spacing, word spacing, text-indent, text-overflow, text-rending, text truncation, serif, sans-serif, baseline, text-decoration, text-align
+- font: font-size, font-family, font-weight, font-style, insert google font,
+- image: object-fit, object-position,
+- background-color
+- block, inline, inline-block
 - overflow: auto, scroll, visible, hidden
 - sizing: box-sizing, width, height, margin, padding, border
-- units: px, em, rem, vw, vh, %
 - radius
-- colors: hexa, rgb, rgba, currentColor, hsl
-- visibility: opacity, display, visibility
 - cursor
-- pointer
-- shadow
+- list-style
+- outline
+- units: px, %
+- gõ nhanh CSS với emmet
 
-# Buổi 3
+# Buổi 3: CSS Cơ bản tiếp theo
+
+- image: aspect-ratio
+- font: font-face
+- colors: rgb, rgba, currentColor, hsl
+- units: em, rem, vw, vh
+- visibility: opacity, display, visibility
+- pointer
+- shadow: single, multiple
+- selectors: :hover, attribute, nth-child, nth-of-type, not, is, where, +, ~, >, spacing, group, ^, \*
+- priority
+- background: url, linear-gradient, radial-gradient, position, repeat, attachment, size
+- width: max-width, min-width, min-content, max-content, fit-content
+- height: max-height, min-height
+- margin: inline, block, negative
+- padding: inline, block
+- inherit, unset, initial
+- variables
+- pseudo: :root, :hover, :first-letter, :first-line, ::selection, :link, :visited, :active, :empty, ::marker
+
+# Master Flexbox
 
 - flexbox
 - align-items
@@ -53,7 +75,7 @@
 - order
 - calc
 
-# Buổi 4
+# Master Grid
 
 - grid
 - grid-template-columns
@@ -77,7 +99,7 @@
 - auto-fill
 - scroll snap
 
-# Buổi 5
+# Master Position
 
 - position
 - relative
@@ -88,17 +110,17 @@
 - top, right, bottom, left
 - inset
 - z-index
-- before
-- after
+- :before
+- :after
 
-# Buổi 6
+#
 
 - transform: rotate, translate, skew, scale, 3d, perspective
 - transition
 - animation
 - translate vs top-right-bottom-left
 
-# Buổi 7
+#
 
 - table
 - responsive
@@ -106,7 +128,7 @@
 - border
 - dropdown
 
-# Buổi 8
+#
 
 - form
 - input
@@ -115,13 +137,14 @@
 - with icon
 - button
 - attributes
+- pseudo: :focus, :valid, :invalid, :checked, :disabled, :read-only, :required, :out-of-range,
 
-# Buổi 9
+#
 
 - custom checkbox, radio, dropdown, file
 - pseudo
 
-# Buổi 10
+#
 
 - responsive
 - media query
@@ -131,7 +154,7 @@
 - min
 - max
 
-# Buổi 11
+#
 
 - pug
 - code
@@ -144,7 +167,7 @@
 - extends
 - object
 
-# Buổi 12
+#
 
 - sass
 - nested
