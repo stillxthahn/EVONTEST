@@ -79,3 +79,68 @@
 - dropdown(danh sách sổ xuống)
 - lớp phủ(overlay)
 - ...
+
+# Gõ nhanh HTML trong VSCode
+
+- Settings: Trigger expandsion on Tab: checked
+- class: dấu chấm(.)
+- dấu + tạo nhiều thành phần liền kề nhau
+- dấu > để tạo ra thành phần là thành phần con
+- dấu \* để tạo ra số lượng mà mình muốn
+- dấu {item $} nó sẽ tạo ra chữ đánh số nếu mình dùng dấu \* ở trên
+- Khi gõ emmet HTML thì không nên có khoảng trắng
+- dấu ^ nghĩa là cùng cấp, dùng trong trường hợp đã đi sâu vào phần tử của phần tử trước đó
+- dấu [] dành cho việc các thuộc tính khác ngoài class và id
+
+# CSS
+
+- Thẻ block: là thẻ có độ rộng 100% thằng chứa nó( chưa áp dụng CSS), khi các thẻ block nằm với nhau thì nó sẽ rớt xuống và tạo hàng mới
+- Thẻ inline: là thẻ có độ rộng bằng với nội dung nó chứa, khi các thẻ inline nằm với nhau thì nó sẽ nằm cạnh nhau, hạn chế 1 vài thuộc tính CSS
+- Thẻ inline-block: nó sẽ có độ rộng bằng với nội dung nó chứa, nó không bị hạn chế về CSS, khi nằm với nhau thì không bị rớt xuống hàng, có 1 khoảng trống tầm 4px ở giữa
+- display: inline, block, inline-block
+- ./: cùng cấp
+- ../: truy xuất ở trong ra ngoài
+- user agent stylesheet: CSS mặc định của trình duyệt
+- \*: là selector chọn toàn bộ các thẻ trong HTML
+- _selectors_:
+- tags(h1, header, div, p, span, a, img..)
+- class: .heading, .button, .section--primary
+- id: #header, #main, #container, #footer
+- attributes: href, src, rel, target, arial-label, placeholder, type, name, disabled, alt...
+- đối với các thuộc tính ngoài class và id thì dùng dấu []
+- [alt="evondev-image"] -> chọn toàn bộ các thẻ có thuộc tính alt là "evondev-image"
+- img[alt="evondev-image"] -> chọn toàn bộ thẻ `img` có thuộc tính alt là "evondev-image"
+- dấu = nghĩa là chính xác tuyệt đối
+- dấu ^ nghĩa là bắt đầu với
+- a[href^="https"] -> chọn toàn bộ các thẻ a có thuộc tính href `bắt đầu` bằng chữ https
+- a[href$=".com"] -> chọn toàn bộ các thẻ a có thuộc tính href `kết thúc` bằng chữ .com
+- a[href*="com"] -> chọn toàn bộ các thẻ a có thuộc tính href `có chứa` chữ .com
+- a[lang|="en"] -> chọn toàn bộ các thẻ a có thuộc tính lang là chữ `en` hoặc bắt đầu với chữ `en-`
+
+# CSS for Text
+
+- color: đổi màu chữ
+- line-height: khoảng cách giữa các dòng chữ
+- word-break: phù hợp cho những đoạn chữ dài dính nhau, làm cho nó tự ngắt xuống dòng
+- white-space: nowrap làm cho chữ luôn nằm trên 1 hàng
+- letter-spacing: khoảng cách giữa các kí tự
+- word-spacing: khoảng cách giữa các từ
+- text-align: căn lề cho chữ
+- text-decoration: gạch cho chữ, giữa, trên và dưới
+- text-indent: di chuyển chữ vào trong hoặc ra ngoài
+- serif: chữ có gạch chân
+- sans-serif: chữ không có gạch chân
+- baseline: đáy chữ
+- overflow: hidden -> nếu nội dung bị tràn thì sẽ bị cắt mất đi
+- text-overflow: ellipse -> nếu kết hợp overflow hidden thì nó sẽ hiển thị dấu 3 chấm ...
+- cắt chữ 1 dòng thì kết hợp thêm white-space: nowrap
+- cắt chữ nhiều dòng thì kết hợp thêm display: -webkit-box; -webkit-box-orient: vertical -webkit-line-clamp: 3; ko nên dùng white-space: nowrap
+- font-weight: độ đậm nhạt của chữ
+- font-style: in thường hoặc in nghiêng
+- font-family: tên font
+- font-size: kích thước chữ px rem em ch vw vh %
+- background-color -> màu nền
+- object-fit: cover(phủ), contain(theo tỉ lệ tấm ảnh gốc)
+- object-position: căn chỉnh trên dưới hoặc trung tâm
+- cursor: con trỏ
+- radius: bo góc, giá trị càng lớn thì bo càng lớn, muốn bo góc hình tròn thì khối nên là hình vuông

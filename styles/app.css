@@ -1,0 +1,100 @@
+/*
+CSS reset margin and padding for all browsers
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+/*
+1. CSS selector structure
+selector1,
+selector2,
+selector3 {
+  property: value;
+}
+
+.heading{}
+.heading1{}
+.heading5{}
+h1{}
+h2{}
+#header{}
+#footer{}
+
+*/
+/* start coding here */
+body {
+  word-break: break-word;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  background-color: #fff;
+}
+.banner-heading {
+  color: #6c5dd3;
+  font-weight: 600;
+  font-size: 22px;
+  font-style: italic;
+  background-color: #f62682;
+  display: inline-block;
+  /* white-space: break-spaces; */
+}
+.feed-desc {
+  line-height: 1.75;
+  letter-spacing: 0.5px;
+  word-spacing: 0.25px;
+  text-align: left;
+  text-align: right;
+  text-align: center;
+  text-align: justify;
+  text-indent: 20px;
+}
+.feed-desc a {
+  text-decoration: underline;
+  text-decoration: overline;
+  text-decoration: line-through;
+  text-decoration: none;
+}
+.text-overflow {
+  /* white-space: nowrap; */
+  color: #f62682;
+  /* text truncation*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.card {
+  width: 400px;
+  height: 400px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.boxed-texts {
+  width: 500px;
+  height: 100px;
+  background-color: #20e3b2;
+  overflow: hidden;
+  /* overflow: overflow-x overflow-y */
+  overflow-y: auto;
+  overflow-x: auto;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  /* overflow: visible; */
+}
+.avatar {
+  width: 70px;
+  height: 70px;
+  background-color: #ffbaa5;
+  border-radius: 100px;
+  overflow: hidden;
+  cursor: pointer;
+}

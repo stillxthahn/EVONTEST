@@ -9,6 +9,7 @@
 - Material Icon Theme
 - Prettier - Code formatter
 - CSS Peek
+- Color Hightlight: Marker type -> underline
 
 # vscode settings
 

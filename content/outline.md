@@ -19,39 +19,41 @@
 - thu-trang-buoi1.zip
 - Thời hạn: càng sớm càng tốt
 
-# Buổi 2: CSS cơ bản
+# CSS cơ bản
 
 - Gõ nhanh HTML với Emmet nên biết
 - Xem chi tiết các thẻ ở đâu ?
 - Thẻ block và thẻ inline khác nhau như nào ?
 - Hiểu về đường dẫn cơ bản(./ vs ../)
 - reset css cho các trình duyệt
-- selectors: tag, class, id, all(\*)
-- text: color, line-height, word-break, white-space, letter spacing, word spacing, text-indent, text-overflow, text-rending, text truncation, serif, sans-serif, baseline, text-decoration, text-align
+- selectors: tag, class, id, all(\*), other attributes(^$\*=)
+- text: color, line-height, word-break, white-space, letter spacing, word spacing, text-indent, text-overflow, text truncation, serif, sans-serif, baseline, text-decoration, text-align
 - font: font-size, font-family, font-weight, font-style, insert google font,
-- image: object-fit, object-position,
 - background-color
+- image: object-fit, object-position,
 - block, inline, inline-block
 - overflow: auto, scroll, visible, hidden
-- sizing: box-sizing, width, height, margin, padding, border
 - radius
 - cursor
+- gõ nhanh CSS với emmet
+- hiểu về độ ưu tiên cơ bản
+- BTVN: Gom nhóm, đặt tên, sử dụng những thuộc tính đã học vào dự án thực tế PodcastUI
+
+# CSS Cơ bản tiếp theo
+
 - list-style
 - outline
 - units: px, %
-- gõ nhanh CSS với emmet
-
-# Buổi 3: CSS Cơ bản tiếp theo
-
+- sizing: box-sizing, width, height, margin, padding, border
 - image: aspect-ratio
 - font: font-face
 - colors: rgb, rgba, currentColor, hsl
 - units: em, rem, vw, vh
 - visibility: opacity, display, visibility
-- pointer
+- pointer-events
 - shadow: single, multiple
-- selectors: :hover, attribute, nth-child, nth-of-type, not, is, where, +, ~, >, spacing, group, ^, \*
-- priority
+- selectors: attribute, nth-child, nth-of-type, not, is, where, +, ~, >, spacing, group, ^, \*
+- hiểu về độ ưu tiên chuyên sâu
 - background: url, linear-gradient, radial-gradient, position, repeat, attachment, size
 - width: max-width, min-width, min-content, max-content, fit-content
 - height: max-height, min-height
@@ -60,6 +62,10 @@
 - inherit, unset, initial
 - variables
 - pseudo: :root, :hover, :first-letter, :first-line, ::selection, :link, :visited, :active, :empty, ::marker
+- text-rendering: optimizeLegibility;
+- -webkit-font-smoothing: antialiased;
+- -moz-osx-font-smoothing: grayscale;
+- scroll: behavior, margin, padding, custom, hide
 
 # Master Flexbox
 
@@ -97,7 +103,7 @@
 - track-line
 - auto-fit
 - auto-fill
-- scroll snap
+- scroll-snap: stop, type, align
 
 # Master Position
 
@@ -148,6 +154,7 @@
 
 - responsive
 - media query
+- em rem px
 - container query
 - scroll
 - clamp
