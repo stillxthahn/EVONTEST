@@ -43,29 +43,20 @@
 
 - list-style
 - outline
-- units: px, %
 - sizing: box-sizing, width, height, margin, padding, border
-- image: aspect-ratio
-- font: font-face
-- colors: rgb, rgba, currentColor, hsl
+- aspect-ratio
+- colors: rgb, rgba, currentColor
 - units: em, rem, vw, vh
 - visibility: opacity, display, visibility
-- pointer-events
-- shadow: single, multiple
-- selectors: attribute, nth-child, nth-of-type, not, is, where, +, ~, >, spacing, group, ^, \*
-- hiểu về độ ưu tiên chuyên sâu
-- background: url, linear-gradient, radial-gradient, position, repeat, attachment, size
+- shadow
+- background: url, linear-gradient, position, repeat, attachment, size
 - width: max-width, min-width, min-content, max-content, fit-content
 - height: max-height, min-height
-- margin: inline, block, negative
-- padding: inline, block
 - inherit, unset, initial
+- overflow-wrap, hyphens,
+- font-face
 - variables
-- pseudo: :root, :hover, :first-letter, :first-line, ::selection, :link, :visited, :active, :empty, ::marker
-- text-rendering: optimizeLegibility;
-- -webkit-font-smoothing: antialiased;
-- -moz-osx-font-smoothing: grayscale;
-- scroll: behavior, margin, padding, custom, hide
+- selectors: attribute, nth-child, nth-of-type, not, is, where, +, ~, >, spacing, group, ^, \*
 
 # Master Flexbox
 
@@ -195,3 +186,14 @@
 - Tùy biến giao diện Wordpress
 - Bí kíp ghi đè code
 - Git và Github cơ bản
+- text-rendering: optimizeLegibility;
+- -webkit-font-smoothing: antialiased;
+- -moz-osx-font-smoothing: grayscale;
+- scroll: behavior, margin, padding, custom, hide
+- pointer-events
+- shadow: inset, multiple
+- margin: inline, block, negative
+- padding: inline, block
+- pseudo: :root, :hover, :first-letter, :first-line, ::selection, :link, :visited, :active, :empty, ::marker
+- white-space
+- hiểu về độ ưu tiên chuyên sâu

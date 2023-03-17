@@ -117,7 +117,7 @@
 - a[href*="com"] -> chọn toàn bộ các thẻ a có thuộc tính href `có chứa` chữ .com
 - a[lang|="en"] -> chọn toàn bộ các thẻ a có thuộc tính lang là chữ `en` hoặc bắt đầu với chữ `en-`
 
-# CSS for Text
+# CSS cơ bản
 
 - color: đổi màu chữ
 - line-height: khoảng cách giữa các dòng chữ
