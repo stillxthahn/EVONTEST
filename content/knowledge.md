@@ -26,6 +26,7 @@
 - thẻ div có thể chứa thẻ div, thẻ div chứa hầu hết các thẻ khác đều được
 - thẻ a không nên chứa thẻ a
 - thẻ tự đóng là thẻ không có children(con): img, br, hr
+- thẻ p không chứa được thẻ div, thẻ p(chính nó)
 - _class_ là thuộc tính dùng cho các thẻ, mục đích của nó là để styling trong CSS, hoặc truy vấn trong Javascript, class có thể trùng nhau, class có nhiều cách đặt tên, thông thường hay gặp là BEM(Block\_\_Element--Modifier)
 - _id_ là thuộc tính dùng cho các thẻ, id là duy nhất cho nên ko được trùng nhau, cũng dùng cho truy vấn trong Javascript
 - vấn đề đặt tên không được tốt là do thiếu vốn từ tiếng Anh
@@ -143,4 +144,57 @@
 - object-fit: cover(phủ), contain(theo tỉ lệ tấm ảnh gốc)
 - object-position: căn chỉnh trên dưới hoặc trung tâm
 - cursor: con trỏ
-- radius: bo góc, giá trị càng lớn thì bo càng lớn, muốn bo góc hình tròn thì khối nên là hình vuông
+- border-radius: bo góc, giá trị càng lớn thì bo càng lớn, muốn bo góc hình tròn thì khối nên là hình vuông
+- `border-radius: 1px` nghĩa top=right=bottom=left = 1px
+- `border-radius: 2px 4px` nghĩa top-left-radius=bottom-right-radius = 2px, top-right-radius=bottom-left-radius = 4px
+- `border-radius: 2px 4px 6px` nghĩa top-left-radius = 2px, top-right-radius=bottom-left-radius = 4px, bottom-right-radius: 6px
+- `border-radius: 2px 4px 6px 8px` nghĩa top-left-radius = 2px, top-right-radius = 4px, bottom-right-radius: 6px, bottom-left-radius=8px;
+- list-style: hiển thị phía trước thẻ li khi dùng trong ol hoặc ul
+
+## Box-sizing
+
+- _content-box_:
+- độ rộng = độ rộng(trong css) + padding-left + padding-right + border-left + border-right
+- chiều cao = chiều cao(trong css) + padding-top + padding-bottom + border-top + border-bottom
+- _border-box_:
+- độ rộng = độ rộng(đã trừ padding-left, padding-right, border-left, border-right) + padding-left + padding-right + border-left + border-right
+- chiều cao = chiều cao(đã trừ padding-top, padding-bottom, border-top, border-bottom) + padding-top + padding-bottom + border-top + border-bottom
+
+## Margin
+
+- `margin`: có 4 hướng top right bottom và left, giá trị của margin có thể là số âm, số dương và auto
+- margin-left và margin-right auto không cho ra giữa đối với inline
+- `margin: 1px` nghĩa là top=right=bottom=left = 1px
+- `margin: 1px 2px` nghĩa top=bottom = 1px, right=left = 2px
+- `margin: 1px 2px 3px` nghĩa là top= 1px right=left = 2px và bottom = 3px
+- `margin: 1px 2px 3px 4px` top = 1px, right = 2px, bottom = 3px, left = 4px
+- `margin: 0 auto` nghĩa là làm khối chạy ra giữa(chỉ có tác dụng với block hoặc flex)
+- `margin-inline: auto` tương đương margin-left: auto và margin-right: auto
+- `margin-block: auto` tương đương margin-top: auto và margin-bottom: auto
+- _margin-collapse_: trường hợp phần tử dùng margin-bottom và margin-top đứng trên dưới, thì giá trị nào lớn hơn nó sẽ lấy giá trị đó, nếu bằng nhau thì lấy 1 trong 2
+- có thể khắc phục bằng cách dùng inline-block
+- dùng `text-align: center` cho thằng cha chứa inline-block nếu muốn inline-block ra giữa(center)
+
+## Padding
+
+- padding ko dùng được số âm(>=0)
+- khi để độ rộng hoặc chiều cao là auto, thì nếu tăng padding lên thì kích thước cũng sẽ tăng theo
+- khi để độ rộng hoặc chiều cao là cố định, khi dùng padding nên lưu ý cẩn thận chiếm hết diện tích của width height
+- nếu không sử dụng padding thì nên thiết lập width và height cố định
+- khi sử dụng padding và không thiết lập width height cố định: tăng font-size, line-height thì width và height sẽ tăng theo
+- nên thiết lập padding left và padding right để không bị dính chữ hai bên(UI)
+
+## Border, outline
+
+- border thuộc về box-sizing, còn outline thì không
+- border: border-width border-style border-color
+- border-width: 2px, 3px
+- border-style: solid, dashed, double, dotted
+- border-color: red, #ff6bcb, rgb, rgba, hsl
+
+# CSS
+
+- `currentColor`: nó sẽ lấy giá trị của thuộc tính color
+- `opacity: 0` nghĩa là không thấy, nhưng vẫn chiếm diện tích và có thể rê chuột vào được(con trỏ)
+- `visibility: hidden` là không thấy, vẫn chiếm diện tích nhưng không rê chuột vào được(con trỏ)
+- `display: none` là ko thấy, ko chiếm diện tích, ko còn gì cả

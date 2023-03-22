@@ -41,13 +41,14 @@
 
 # CSS Cơ bản tiếp theo
 
+- Sửa bài
 - list-style
 - outline
 - sizing: box-sizing, width, height, margin, padding, border
 - aspect-ratio
 - colors: rgb, rgba, currentColor
-- units: em, rem, vw, vh
 - visibility: opacity, display, visibility
+- units: em, rem, vw, vh
 - shadow
 - background: url, linear-gradient, position, repeat, attachment, size
 - width: max-width, min-width, min-content, max-content, fit-content
