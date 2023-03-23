@@ -198,3 +198,59 @@
 - `opacity: 0` nghĩa là không thấy, nhưng vẫn chiếm diện tích và có thể rê chuột vào được(con trỏ)
 - `visibility: hidden` là không thấy, vẫn chiếm diện tích nhưng không rê chuột vào được(con trỏ)
 - `display: none` là ko thấy, ko chiếm diện tích, ko còn gì cả
+- _vw_: viewport width
+- _vh_: viewport height
+- _viewport_ độ rộng hoặc chiều cao của document, cẩn thận khi sử dụng `vw` nếu không hiểu cách nó hoạt động
+- _rem_: đơn vị này sẽ phụ thuộc vào thuộc tính font-size của thẻ html(root)
+- _em_: đơn vị em sẽ phụ thuộc vào thuộc tính font-size gần nhất(chính nó hoặc phần tử chứa nó), hạn chế dùng nếu không nắm vững
+- Mặc định font-size của hầu hết trình duyệt là 100%(16px)
+- _1rem_ = 1em = 16px
+- Khi đổi font-size trong thẻ html thì tất cả những chỗ sử dụng đơn vị `rem` đều bị ảnh hưởng
+- Thường ngta hay thiết lập font-size cho thẻ html là 62.5% để đổi đơn vị về cơ số 10px = 1rem, cho dễ tính toán
+- box-shadow: x y blur scale color
+- box-shadow không chiếm diện tích, có thể viết nhiều shadow ngăn cách nhau bởi dấu phẩy
+- thông thường đi làm thì sẽ copy từ thiết kế vào, nhưng cũng hiểu để biết tùy chỉnh
+- button, input, textarea, select nó sẽ lấy font từ trình duyệt chứ không kế thừa từ body
+- max-width: Độ rộng tối đa
+- Nếu width nhỏ hơn max-width thì nó sẽ lấy giá trị của width (170px < 200px -> 170px)
+- Nếu width lớn hơn hoặc bằng max-width thì nó sẽ lấy giá trị max-width(200px)
+- min-width: Độ rộng tối thiểu
+- Nếu có min-width và max-width thì nó sẽ ưu tiên min-width hơn(nếu min-width > max-width)
+- Nếu nội dung không có gì cả thì vẫn rộng theo min-width
+- min-content nó sẽ độ rộng của từ dài nhất
+- max-content và fit-content tương tự nhau, nhưng khuyến khích sử dụng fit-content
+- inherit kế thừa từ thằng chứa nó gần nhất
+- initial nó sẽ lấy theo giá trị của trình duyệt
+- unset nó sẽ có giá trị là inherit nếu thằng cha chứa nó có thuộc tính tương ứng, không thì nó sẽ là initial
+- SEO
+- Khi sử dụng background thì phải có width height, đường dẫn phải chính xác
+- Parallax
+- linear-gradient(dir)
+- dir: to left, to right, to top, to bottom, 0->360deg, to right top, to top right, to bottom left
+  ....
+- variables(biến): 1 giá trị dùng để dùng đi dùng lại ở nhiều chỗ và khi nó thay đổi thì những chỗ nào sử dụng nó sẽ thay đổi hết
+- Khai báo thông thường ở :root(html)
+- Cách đặt tên: --primary-color
+- Cách sử dụng: var(--primary-color, orange) -> nếu ko tồn tại biến --primary-color thì nó sẽ lấy giá trị là orange
+- Nếu tên biến trùng nhau nó sẽ ưu tiên thằng gần nhất
+
+# Selectors
+
+- selector:first-child: chọn thằng đầu tiên
+- selector:last-child: chọn thằng cuối cùng
+- selector:nth-child(number): chọn thằng theo thứ tự từ trên xuống dưới bắt đầu từ 1
+- selector:nth-last-child(number): chọn từ dưới lên cũng bắt đầu từ 1
+- selector:not(selector2): chọn selector này và không phải 1 selector khác
+
+- type nó sẽ lấy theo thẻ
+- selector:first-of-type
+- selector:last-of-type
+- selector:nth-of-type(number)
+- selector:nth-last-of-type(number)
+
+- is, where
+
+- \+ đừng liền kế phía sau
+- \~ đứng cùng cấp là được
+- dấu cách tức là phần tử con là được
+- \> nghĩa là con trực tiếp

@@ -49,15 +49,15 @@
 - colors: rgb, rgba, currentColor
 - visibility: opacity, display, visibility
 - units: em, rem, vw, vh
-- shadow
-- background: url, linear-gradient, position, repeat, attachment, size
+- box-shadow
 - width: max-width, min-width, min-content, max-content, fit-content
 - height: max-height, min-height
-- inherit, unset, initial
 - overflow-wrap, hyphens,
-- font-face
+- inherit, unset, initial
+- background: url, linear-gradient, position, repeat, attachment, size
 - variables
 - selectors: attribute, nth-child, nth-of-type, not, is, where, +, ~, >, spacing, group, ^, \*
+- font-face
 
 # Master Flexbox
 
@@ -193,8 +193,6 @@
 - scroll: behavior, margin, padding, custom, hide
 - pointer-events
 - shadow: inset, multiple
-- margin: inline, block, negative
-- padding: inline, block
 - pseudo: :root, :hover, :first-letter, :first-line, ::selection, :link, :visited, :active, :empty, ::marker
 - white-space
 - hiểu về độ ưu tiên chuyên sâu
